@@ -58,3 +58,9 @@ file_integrity_checker/
 ├── gui.py            # GUI frontend logic (if implemented)
 ├── main.py           # The main entry point for your application
 └── logs/             # Directory to store log files
+
+# Testing Tips
+
+* Use dummy folders with known files.
+* Try editing a file after storing the hash and check if detection works.
+* Test performance on large files and directories.
