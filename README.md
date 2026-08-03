@@ -81,18 +81,8 @@ File-Integrity-Checker/
 ├── config.json            # Project configuration
 ├── requirements.txt       # Project dependencies
 ├── README.md
-├── LICENSE
-├── .gitignore
-│
-├── assets/                # Images and icons
-├── logs/                  # Generated log files
-└── database/
-    └── integrity.db       # SQLite database
+
 ```
-
-> **Note:** The `logs/`, `database/`, `venv/`, and `__pycache__/` directories are generated locally and should not be committed to GitHub.
-
----
 
 ## ⚙️ Installation
 
