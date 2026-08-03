@@ -1,0 +1,114 @@
+{
+  "app_info": {
+    "name": "File Integrity Checker",
+    "version": "1.0.0",
+    "description": "Monitor and verify file integrity using cryptographic hashes"
+  },
+  
+  "hash_algorithm": "sha256",
+  
+  "scan_settings": {
+    "recursive_scan": true,
+    "follow_symlinks": false,
+    "exclude_patterns": [
+      "*.log",
+      "*.tmp",
+      "*.temp",
+      "__pycache__",
+      "*.pyc",
+      "*.pyo",
+      ".git",
+      ".svn",
+      ".DS_Store",
+      "Thumbs.db",
+      "node_modules",
+      ".venv",
+      "venv"
+    ],
+    "include_hidden_files": false,
+    "max_file_size_mb": 1000
+  },
+  
+  "database_settings": {
+    "database_path": "file_hashes.db",
+    "auto_backup": true,
+    "backup_frequency_days": 7,
+    "backup_directory": "backups",
+    "max_backups": 5
+  },
+  
+  "logging_settings": {
+    "log_directory": "logs",
+    "log_level": "INFO",
+    "console_output": true,
+    "file_output": true,
+    "max_log_size_mb": 10,
+    "backup_count": 5,
+    "audit_log_retention_days": 30,
+    "detailed_logging": false
+  },
+  
+  "notification_settings": {
+    "enable_notifications": true,
+    "notify_on_changes": true,
+    "notify_on_errors": true,
+    "email_notifications": false,
+    "email_settings": {
+      "smtp_server": "smtp.example.com",
+      "smtp_port": 587,
+      "use_tls": true,
+      "sender_email": "alerts@example.com",
+      "receiver_emails": [
+        "admin@example.com"
+      ]
+    }
+  },
+  
+  "verification_settings": {
+    "auto_verify": false,
+    "verification_schedule": "daily",
+    "verification_time": "02:00",
+    "compare_file_size": true,
+    "compare_modified_time": true,
+    "compare_permissions": false
+  },
+  
+  "performance_settings": {
+    "chunk_size_kb": 128,
+    "max_workers": 4,
+    "enable_parallel_hashing": false,
+    "memory_limit_mb": 512
+  },
+  
+  "ui_settings": {
+    "theme": "system",
+    "color_scheme": "blue",
+    "window_size": {
+      "width": 1100,
+      "height": 700
+    },
+    "remember_last_path": true,
+    "auto_refresh_stats": true,
+    "show_file_count": true
+  },
+  
+  "security_settings": {
+    "encrypt_database": false,
+    "require_authentication": false,
+    "password_hash": "",
+    "session_timeout_minutes": 30
+  },
+  
+  "advanced_settings": {
+    "enable_debug_mode": false,
+    "save_detailed_reports": true,
+    "report_directory": "reports",
+    "export_format": "json",
+    "compression_enabled": false
+  },
+  
+  "default_paths": {
+    "last_scanned_path": "",
+    "favorite_paths": []
+  }
+}

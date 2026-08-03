@@ -1,0 +1,10 @@
+# Navigate to your project directory
+cd file_integrity_checker
+
+# Create virtual environment
+python3 -m venv venv
+
+# Activate virtual environment
+source venv/bin/activate
+
+python gui.py  or  python main.py --gui
